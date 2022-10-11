@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tokyo Marathon Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <h1 id="title">Tokyo Marathon Regristration Form</h1>
+   <p id="description">Welcome to the 25th annual Tokyo Marathon!</p>
+   <form id="survey-form">
+     <fieldset id="name-email-age">
+       <label id="name-label" for="name">Name</label><input id="name" type="text" required placeholder="John Smith">
+       <label id="email-label" for="email">Email</label><input id="email" type="email" required placeholder="johnsmith88@gmail.com">
+       <label id="number-label" for="number">Age</label><input id="number" type="number" required min="18" max="150" placeholder="18">
+     </fieldset>
+     <fieldset id="distance">
+       <label id="dropdown-label" for="dropdown">How far will you be running?</label>
+       <select id="dropdown">
+         <option value="none">--</option>
+         <option value="5">5 KM</option>
+         <option value="10">10 KM</option>
+         <option value="15">15 KM</option>
+         <option value="20">20 KM</option>
+         <option value="30">30 KM</option>
+         <option value="42">42 KM</option>
+         <option value="100">100 KM</option>
+       </select>
+    </fieldset>
+    <fieldset id="drinks">
+      <p id="drink-question">Will you be bringing your own drinks?</p>
+      <br>
+      <input type="radio" name="yes-no-maybe" value="yes" id="yes" checked><label for="yes"> Yes</label>
+      <br>
+      <input type="radio" name="yes-no-maybe" value="no" id="no"><label for="no"> No</label>
+      <br>
+      <input type="radio" name="yes-no-maybe" value="maybe" id="maybe"><label for="maybe"> Maybe</label>
+    </fieldset>
+    <br>
+    <fieldset id="shoes">
+      <label for="dropdown2" id="dropdown2-label">What are your favorite running shoes?</label>
+      <select id="dropdown2">
+        <option value="none">--</option>
+        <option value="saucony-end-sp2">Saucony Endorphin Speed 2</option>
+        <option value="brooks-glyc20">Brooks Glycerin 20</option>
+        <option value="puma-vel-ni2">Puma Velocity Nitro 2</option>
+        <option value="nike-zoomx">Nike ZoomX Invincible Run Flyknit 2</option>
+        <option value="other">Other</option>
+    </select>
+    </fieldset>
+    <fieldset id="food">
+      <p id="food-question">What food do you want after the race?</p>
+      <br>
+      <input type="checkbox" value="sushi" id="sushi"> <label for="sushi">Sushi</label>
+      <br>
+      <input type="checkbox" value="chili" id="chili"> <label for="chili">Chili</label>
+      <br>
+      <input type="checkbox" value="hamburger" id="hamburger"> <label for="hamburger">Hamburger</label>
+      <br>
+      <input type="checkbox" value="pizza" id="pizza"> <label for="pizza">Pizza</label>
+      <br>
+      <input type="checkbox" value="hotdog" id="hotdog"> <label for="hotdog">Hotdog</label>
+      <br>
+      <input type="checkbox" value="ramen" id="ramen"> <label for="ramen">Ramen</label>
+    </fieldset>
+    <br>
+    <p id="comments">Comments/Suggestions</p>
+    <textarea placeholder=""></textarea>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
